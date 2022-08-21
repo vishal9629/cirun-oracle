@@ -1,2 +1,2 @@
 # cirun-oracle
-citun-oracle-testing
+cirun-oracle-testing
