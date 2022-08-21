@@ -3,7 +3,7 @@ name: GitHub Actions on Oracle Cloud
 on: push
 jobs:
   build:
-    runs-on: [self-hosted, oracle, oracle-cloud]
+    runs-on: [self-hosted, oracle-cloud]
 
     steps:
       - uses: actions/checkout@v3
