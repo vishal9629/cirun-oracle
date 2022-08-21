@@ -27,5 +27,4 @@ jobs:
           cat /etc/*release
       - name: Run "lscpu"
         run: lscpu
-      - name: hello world
-        run: echo hello world
+      
