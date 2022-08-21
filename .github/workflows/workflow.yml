@@ -1,0 +1,29 @@
+name: GitHub Actions on Oracle Cloud
+
+on: push
+jobs:
+  build:
+    runs-on: [self-hosted, oracle]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get Hostname
+        run: |
+          hostname
+      - name: Run nvidia-smi if present
+        run: |
+          nvidia-smi || true
+      - name: Get system Information
+        run: |
+          uname -a
+      - name: Get Architecture
+        run: |
+          dpkg --print-architecture
+      - name: Get system Disk space
+        run: |
+          df -h
+      - name: Get OS version
+        run: |
+          cat /etc/*release
+      - name: Run "lscpu"
+        run: lscpu
