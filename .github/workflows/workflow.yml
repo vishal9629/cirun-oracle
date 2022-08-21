@@ -29,3 +29,5 @@ jobs:
         run: lscpu
       - name: hello world
         run: echo hello world
+      - name: Todays Date
+        run: date
