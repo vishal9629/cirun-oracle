@@ -3,7 +3,7 @@ name: GitHub Actions on Oracle Cloud
 on: push
 jobs:
   build:
-    runs-on: [self-hosted, oracle]
+    runs-on: [self-hosted, oracle-cloud]
 
     steps:
       - uses: actions/checkout@v3
@@ -29,3 +29,5 @@ jobs:
         run: lscpu
       - name: hello world
         run: echo hello world
+      - name: Todays Date
+        run: date
