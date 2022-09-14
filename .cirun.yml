@@ -1,7 +1,7 @@
 runners:
   - name: do-runner
     # Cloud Provider: DigitalOcean
-    cloud: digitalocean
+    cloud: do
     # Cheapest VM on DigitalOcean
     instance_type: s-1vcpu-1gb
     # Ubuntu-20.4  image"
