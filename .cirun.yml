@@ -8,5 +8,5 @@ runners:
     machine_image: ubuntu-20-04-x64
     # Add this label in the "runs-on" param in .github/workflows/<workflow-name>.yml
     # So that this runner is created for running the workflow
-    labels:
-      - do
+    workflow: .github/workflows/workflow.yml
+    count: 1
