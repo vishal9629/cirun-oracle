@@ -1,11 +1,11 @@
 runners:
-  - name: "do-runner"
+  - name: do-runner
     # Cloud Provider: DigitalOcean
-    cloud: "digitalocean"
+    cloud: digitalocean
     # Cheapest VM on DigitalOcean
-    instance_type: "s-1vcpu-1gb"
+    instance_type: s-1vcpu-1gb
     # Ubuntu-20.4  image"
-    machine_image: "ubuntu-20-04-x64"
+    machine_image: ubuntu-20-04-x64
     # Add this label in the "runs-on" param in .github/workflows/<workflow-name>.yml
     # So that this runner is created for running the workflow
     labels:
