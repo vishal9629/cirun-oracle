@@ -1,6 +1,6 @@
 name: GitHub Actions on Oracle Cloud
 
-on: none
+on: push
 jobs:
   build:
     runs-on: [self-hosted, oracle-cloud]
