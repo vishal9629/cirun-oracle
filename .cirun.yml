@@ -1,12 +1,9 @@
 runners:
-  - name: do-runner
-    # Cloud Provider: DigitalOcean
-    cloud: do
-    # Cheapest VM on DigitalOcean
-    instance_type: s-1vcpu-1gb
-    # Ubuntu-20.4  image"
-    machine_image: ubuntu-20-04-x64
-    # Add this label in the "runs-on" param in .github/workflows/<workflow-name>.yml
-    # So that this runner is created for running the workflow
+  - name: oracle-runner
+    cloud: oracle
+    instance_type: VM.Standard.E2.1.Micro
+    machine_image: ocid1.image.oc1.uk-london-1.aaaaaaaavy5v3inu2ho2h57vwvvsclukdh4jvhg45um2nrejyxa7s46zcwoq
+    region: uk-london-1
     workflow: .github/workflows/workflow.yml
-    count: 1
+    labels:
+      - oracle-cloud
