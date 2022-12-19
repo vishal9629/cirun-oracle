@@ -10,9 +10,6 @@ jobs:
       - name: Get Hostname
         run: |
           hostname
-      - name: Run nvidia-smi if present
-        run: |
-          nvidia-smi || true
       - name: Get system Information
         run: |
           uname -a
