@@ -1,9 +1,9 @@
-name: GitHub Actions on digitalocean
+name: GitHub Actions on Oracle Cloud
 
-on: push
+on: none
 jobs:
   build:
-    runs-on: [self-hosted, do]
+    runs-on: [self-hosted, oracle-cloud]
 
     steps:
       - uses: actions/checkout@v3
